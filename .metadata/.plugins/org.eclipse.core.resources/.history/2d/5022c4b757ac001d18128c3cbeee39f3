@@ -1,0 +1,6 @@
+package com.springcore.aspect;
+
+@Aspect
+public class FirstAspect {
+
+}

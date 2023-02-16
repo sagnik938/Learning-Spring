@@ -1,0 +1,17 @@
+package com.spring.jdbcDemo.Dao;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class StudentDaoImpl implements StudentDao {
+	
+	private JdbcTemplate jdbctemp;
+
+	public JdbcTemplate getJdbctemp() {
+		return jdbctemp;
+	}
+
+	public void setJdbctemp(JdbcTemplate jdbctemp) {
+		this.jdbctemp = jdbctemp;
+	}
+	
+}

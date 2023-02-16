@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Employees</h1>
+
+	<table border="3">
+		<tr>
+			<th>ID</th>
+			<th>NAME</th>
+			<th>SALARY</th>
+			<th>DESIGNATION</th>
+			<th>EDIT</th>
+			<th>DELETE</th>
+		</tr>
+
+		<c:forEach var="empl" items="${list}">
+			<tr>
+				<td>${empl.id}</td>
+				<td>${empl.name}</td>
+				<td>${empl.salary}</td>
+				<td>${empl.designation}</td>
+				<td>editref</td>
+				<td>deleteref</td>
+			</tr>
+
+		</c:forEach>
+	</table>
+</body>
+</html>

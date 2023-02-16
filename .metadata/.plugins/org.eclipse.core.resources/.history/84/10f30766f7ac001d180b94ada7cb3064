@@ -1,0 +1,17 @@
+package com.spring.jdbcDemo;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.spring.jdbcDemo.Dao.StudentDaoImpl;
+import com.spring.jdbcDemo.model.Student;
+
+public class App {
+	public static void main(String[] args) {
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("com/spring/jdbcDemo/config.xml");
+		Student s = new Student();
+		StudentDaoImpl sd = 
+		sd.insert(s);
+	}
+}

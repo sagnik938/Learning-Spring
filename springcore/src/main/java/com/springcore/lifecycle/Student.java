@@ -1,0 +1,40 @@
+package com.springcore.lifecycle;
+import javax.annotation.*;
+public class Student {
+	private String subject;
+
+	public Student() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Student(String subject) {
+		super();
+		this.subject = subject;
+	}
+
+	public String getSubject() {
+		return subject;
+	}
+
+	public void setSubject(String subject) {
+		System.out.println("Setting subject");
+		this.subject = subject;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [subject=" + subject + "]";
+	}
+	
+	@PostConstruct
+	public void init() {
+		System.out.println("Inside student init");
+	}
+	
+	@PreDestroy
+	public void destroy() {
+		System.out.println("Inside destroy");
+	}
+
+}

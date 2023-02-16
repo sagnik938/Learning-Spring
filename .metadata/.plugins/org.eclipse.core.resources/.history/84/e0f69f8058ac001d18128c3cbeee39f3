@@ -1,0 +1,9 @@
+package com.springcore.aspect;
+
+@Aspect
+public class FirstAspect {
+	
+	public void printBefore() {
+		System.out.println("Payment started....");
+	}
+}

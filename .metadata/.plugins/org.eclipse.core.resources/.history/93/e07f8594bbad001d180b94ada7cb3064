@@ -1,0 +1,13 @@
+<%@page import="java.util.ArrayList"%>
+<%@page import="java.util.List"%>
+<html>
+<body>
+<h2>Hello World!</h2>
+<% 
+List<String> ls = new ArrayList<String>();
+ls.add("s");
+ls.add("a");
+System.out.println(ls);
+%>
+</body>
+</html>
