@@ -1,0 +1,46 @@
+package com.spring.DemoMvc.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+
+import com.spring.DemoMvc.model.Employee;
+
+public class EmployeeDao {
+	private JdbcTemplate jdbcTemplate;
+
+	public JdbcTemplate getJdbcTemplate() {
+		return jdbcTemplate;
+	}
+
+	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+		this.jdbcTemplate = jdbcTemplate;
+	}
+
+	public int save(Employee e) {
+		String query = "insert into empl values(?,?,?)";
+		int r = this.jdbcTemplate.update(query,e.getId(),e.getName(),e.getSalary(),e.getDesignation());
+		return r;
+	}
+
+	public int update(Employee e) {
+		String query = "update empl set name=? , salary=? , designation=? where id=?";
+		int r = this.jdbcTemplate.update(query,e.getName(),e.getSalary(),e.getDesignation(),e.getId());
+		return r;
+	}
+
+	public int delete(int id) {
+		String query = "delete from empl where id=?";
+		int r = this.jdbcTemplate.update(query,id);
+		return(r);
+	}
+
+	public List<Employee> getAllEmpl(int id) {
+		String query = "select * from empl";
+		RowMapper<Student> rowMapper = new RowMapperImpl();
+		List<Student> ls = this.jdbcTemplate.query(query, rowMapper);
+		return ls;;
+	}
+}

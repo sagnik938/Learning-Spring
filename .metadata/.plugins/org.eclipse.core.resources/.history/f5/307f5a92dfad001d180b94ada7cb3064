@@ -1,0 +1,20 @@
+package com.spring.DemoMvc.controller;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.spring.DemoMvc.dao.EmployeeDao;
+
+@Controller
+public class EmployeeController {
+	
+	@Autowired
+	EmployeeDao emplDao;
+	
+	@RequestMapping("/employeeForm")
+	public String showForm(Model model) {
+		
+	}
+
+}

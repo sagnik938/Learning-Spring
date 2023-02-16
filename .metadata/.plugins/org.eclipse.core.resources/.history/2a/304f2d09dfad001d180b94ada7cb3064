@@ -1,0 +1,11 @@
+package com.spring.DemoMvc.controller;
+import org.springframework.stereotype.Controller;
+import com.spring.DemoMvc.dao.EmployeeDao;
+
+@Controller
+public class EmployeeController {
+	
+	EmployeeDao emplDao;
+	
+
+}

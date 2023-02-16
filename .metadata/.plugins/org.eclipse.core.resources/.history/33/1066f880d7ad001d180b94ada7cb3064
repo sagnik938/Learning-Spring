@@ -1,0 +1,9 @@
+<html>
+<body>
+<h1>Employee Details App</h1>
+<table>
+<tr><a href="employeeForm">Add new employee</a></tr>
+<tr><a href="viewForm">View Employees</a></tr>
+</table>
+</body>
+</html>

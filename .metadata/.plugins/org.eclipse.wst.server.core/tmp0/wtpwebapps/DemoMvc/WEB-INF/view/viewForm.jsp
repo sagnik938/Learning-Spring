@@ -29,12 +29,12 @@
 				<td>${empl.name}</td>
 				<td>${empl.salary}</td>
 				<td>${empl.designation}</td>
-				<td>editref</td>
-				<td>deleteref</td>
+				<td><a href="employeeEdit/${empl.id}">Edit</a></td>
+				<td><a href="employeeDelete/${empl.id}">Delete</a></td>
 			</tr>
 
 		</c:forEach>
 	</table>
-	<a href="employeeForm.jsp">Add New Employee</a>
+	<a href="employeeForm">Add New Employee</a>
 </body>
 </html>
