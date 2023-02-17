@@ -17,7 +17,7 @@
 
 			<tr>
 				<td>Id:</td>
-				<td><form:input path="id" /></td>
+				<td><form:input path="id"/></td>
 			</tr>
 
 			<tr>

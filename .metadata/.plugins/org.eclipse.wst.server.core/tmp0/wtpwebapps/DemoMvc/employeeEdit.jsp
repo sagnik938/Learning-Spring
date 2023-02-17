@@ -10,12 +10,8 @@
 </head>
 <body>
 	<h1>Update Information</h1>
-	<form:form method="post" action="employeeEdit">
+	<form:form method="post" action="modify">
 		<table>
-			<tr>
-				<td>Updated Name:</td>
-				<td><form:hidden path="id" /></td>
-			</tr>
 
 			<tr>
 				<td>Updated Name:</td>
