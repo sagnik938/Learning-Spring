@@ -10,8 +10,10 @@ public class Employee {
 	
 	@Size(min=3,message = "Must be a valid name")
 	private String name;
-	@Size(min=4,message = "Password must be 4 characters long")
+	
+	//@Size(min=4,message = "Password must be 4 characters long")
 	//@Pattern(regexp = "",message = "Invalid password")
+	@Password
 	private String password;
 	
 	@Positive(message="age cannot be negative")
