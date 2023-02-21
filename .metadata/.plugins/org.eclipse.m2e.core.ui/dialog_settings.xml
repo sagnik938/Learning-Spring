@@ -6,6 +6,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\SAGNIKS\Desktop\Spring\mvcValidationDemo"/>
 			<item value="C:\Users\SAGNIKS\Desktop\Spring\DemoMvc"/>
 			<item value="C:\Users\SAGNIKS\Desktop\Spring\SpringHibernateDemo"/>
 			<item value="C:\Users\SAGNIKS\Desktop\Spring\JDBCDemo"/>
@@ -33,14 +34,17 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.spring.webservicesdemo.WebServicesDemo"/>
 			<item value="com.spring.validationDemo.SpringValidationDemo"/>
 			<item value="co.spring.MVCProject.DemoMvc"/>
 		</list>
 		<list key="groupId">
+			<item value="com.spring.webservicesdemo"/>
 			<item value="com.spring.validationDemo"/>
 			<item value="co.spring.MVCProject"/>
 		</list>
 		<list key="artifactId">
+			<item value="WebServicesDemo"/>
 			<item value="SpringValidationDemo"/>
 			<item value="DemoMvc"/>
 		</list>

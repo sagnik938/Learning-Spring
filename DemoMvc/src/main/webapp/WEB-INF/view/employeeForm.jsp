@@ -9,6 +9,12 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Register</title>
+<style>
+.error {
+	color: red
+}
+;
+</style>
 </head>
 <body>
 	<h1>Add new employee</h1>
@@ -17,24 +23,23 @@
 
 			<tr>
 				<td>Id:</td>
-				<td><form:input path="id"/></td>
+				<td><form:input path="id" /></td>
 			</tr>
 
 			<tr>
 				<td>Name:</td>
-				<td><form:input path="name" /></td>
+				<td><form:input path="name" /> 
 			</tr>
 
 			<tr>
 				<td>Salary:</td>
-				<td><form:input path="salary" /></td>
+				<td><form:input path="salary" />
 			</tr>
 
 			<tr>
 				<td>Designation:</td>
-				<td><form:input path="designation" /></td>
+				<td><form:input path="designation" /> 
 			</tr>
-
 			<tr>
 				<td><input type="submit" value="submit" /></td>
 			</tr>

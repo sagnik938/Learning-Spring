@@ -14,5 +14,4 @@ public class EmployeeExceptionHandler {
 		m.addAttribute("msg","Exception occured");
 		return("error");
 	}
-
 }

@@ -1,19 +1,25 @@
 package com.spring.DemoMvc.model;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.PositiveOrZero;
+
+
 public class Employee {
 
 	private int id;
+	@NotBlank(message = "name cannot be blank")
 	private String name;
+
+	@PositiveOrZero(message = "Salary must be positive")
 	private int salary;
+
+	@NotBlank(message = "designation cannot be blank")
 	private String designation;
-	
-	
 
 	public Employee() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
 
 	public Employee(int id) {
 		super();

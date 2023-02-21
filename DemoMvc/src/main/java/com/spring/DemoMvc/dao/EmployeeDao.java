@@ -43,4 +43,14 @@ public class EmployeeDao {
 		List<Employee> ls = this.jdbcTemplate.query(query, rowMapper);
 		return ls;
 	}
+	public boolean checkId(int id) {
+		String query = "select * from empl where id=?";
+		RowMapper<Employee> rm = new RowMapperImpl();
+		List<Employee> e = this.jdbcTemplate.query(query,rm);
+		if( e.isEmpty() ) {
+			return(true);
+		}
+		return(false);
+		
+	}
 }
